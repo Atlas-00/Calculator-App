@@ -1,0 +1,114 @@
+<div class="calculator">
+  <div class="calculator-input">
+    <input type="text" [formControl]="valueInput" />
+  </div>
+
+  <div class="calculator-content">
+    <div class="calculator-body">
+      <div class="calculator-header">
+        <input
+          type="button"
+          class="calculator-btn"
+          (click)="resetInput()"
+          value="AC"
+        />
+        <input type="button" class="calculator-btn" value="*/+" />
+        <input type="button" class="calculator-btn" value="%" />
+      </div>
+
+      <div class="body-1">
+        <input
+          type="button"
+          class="calculator-btn"
+          (click)="getNumber(7)"
+          value="7"
+        />
+        <input
+          type="button"
+          class="calculator-btn"
+          (click)="getNumber(8)"
+          value="8"
+        />
+        <input
+          type="button"
+          class="calculator-btn"
+          (click)="getNumber(9)"
+          value="9"
+        />
+      </div>
+
+      <div class="body-1">
+        <input
+          type="button"
+          class="calculator-btn"
+          (click)="getNumber(4)"
+          value="4"
+        />
+        <input
+          type="button"
+          class="calculator-btn"
+          (click)="getNumber(5)"
+          value="5"
+        />
+        <input
+          type="button"
+          class="calculator-btn"
+          (click)="getNumber(6)"
+          value="6"
+        />
+      </div>
+
+      <div class="body-1">
+        <input
+          type="button"
+          class="calculator-btn"
+          (click)="getNumber(1)"
+          value="1"
+        />
+        <input
+          type="button"
+          class="calculator-btn"
+          (click)="getNumber(2)"
+          value="2"
+        />
+        <input
+          type="button"
+          class="calculator-btn"
+          (click)="getNumber(3)"
+          value="3"
+        />
+      </div>
+
+      <div class="body-footer body-1">
+        <button class="calculator-btn" (click)="resetInput()">
+          <i class="fa-solid fa-arrow-rotate-left"></i>
+        </button>
+        <input
+          type="button"
+          class="calculator-btn"
+          (click)="getNumber(0)"
+          value="0"
+        />
+        <input type="button" class="calculator-btn" value="." />
+      </div>
+    </div>
+
+    <div class="calculator-aside-right">
+      <button class="calculator-btn body-2" (click)="getSymbol('/')">
+        <i class="fa-solid fa-divide"></i>
+      </button>
+      <button class="calculator-btn body-2" (click)="getSymbol('*')">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <button class="calculator-btn body-2" (click)="getSymbol('-')">
+        <i class="fa-solid fa-minus"></i>
+      </button>
+      <button class="calculator-btn body-2" (click)="getSymbol('+')">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <button class="calculator-btn body-2">
+        <i class="fa-solid fa-equals"></i>
+      </button>
+    </div>
+  </div>
+</div>
